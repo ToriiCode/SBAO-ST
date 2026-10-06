@@ -1,10 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<!-- Usamos ScrollView para que se pueda deslizar hacia abajo -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AyudaActivity">
+    android:background="#FFF3E0"> <!-- Fondo naranjita suave -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Centro de Ayuda"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#E65100"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📌 ¿Qué es SBAO Hub?"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Es el portafolio oficial del equipo. Sirve para acceder rápidamente a nuestro proyecto web alojado en Vercel y contactarnos."
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📌 ¿Por qué me pide mi nombre?"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usamos una validación para asegurarnos de saludarte adecuadamente en la pantalla principal del Dashboard."
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📌 ¿Para qué sirven los ajustes?"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El botón de ajustes abre la configuración de Wi-Fi de tu teléfono para que verifiques que tienes internet antes de abrir Vercel."
+            android:layout_marginBottom="32dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⬅️ Volver al Inicio"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
