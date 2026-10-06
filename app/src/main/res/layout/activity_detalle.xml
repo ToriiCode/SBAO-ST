@@ -1,56 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="32dp"
-    android:gravity="center"
-    android:background="#F5F5F5">
+    android:background="#ECEFF1">
 
-    <!-- Aquí mostraremos el nombre que vino de la pantalla anterior -->
-    <TextView
-        android:id="@+id/tvBienvenida"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hola, Usuario"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="32dp"
-        android:textColor="#333333"/>
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnVercel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🌐 Abrir Proyecto en Vercel"
-        android:layout_marginBottom="12dp"/>
+        <!-- Título de Bienvenida -->
+        <TextView
+            android:id="@+id/tvBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hola, Usuario"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#263238"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"/>
 
-    <Button
-        android:id="@+id/btnInstagram"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="📸 Visitar nuestro Instagram"
-        android:layout_marginBottom="12dp"/>
+        <!-- Tarjeta 1: Webs -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp">
 
-    <Button
-        android:id="@+id/btnLlamar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="📞 Llamar al Equipo"
-        android:layout_marginBottom="12dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#FFFFFF">
 
-    <Button
-        android:id="@+id/btnCorreo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="✉️ Enviar Correo de Contacto"
-        android:layout_marginBottom="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🌐 Nuestras Plataformas"
+                    android:textStyle="bold"
+                    android:textColor="#0277BD"
+                    android:layout_marginBottom="12dp"/>
 
-    <Button
-        android:id="@+id/btnMapa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="📍 Ver Sede en el Mapa" />
+                <Button
+                    android:id="@+id/btnVercel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abrir Proyecto Vercel"
+                    android:layout_marginBottom="8dp"/>
 
-</LinearLayout>
+                <Button
+                    android:id="@+id/btnInstagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visitar Instagram"
+                    style="?attr/materialButtonOutlinedStyle"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta 2: Contacto y Mapa -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📞 Contacto y Ubicación"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32"
+                    android:layout_marginBottom="12dp"/>
+
+                <Button
+                    android:id="@+id/btnLlamar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Llamar al Equipo"
+                    android:layout_marginBottom="8dp"
+                    style="?attr/materialButtonOutlinedStyle"/>
+
+                <Button
+                    android:id="@+id/btnCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enviar Correo"
+                    android:layout_marginBottom="8dp"
+                    style="?attr/materialButtonOutlinedStyle"/>
+
+                <Button
+                    android:id="@+id/btnMapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📍 Ver Sede en el Mapa"
+                    android:backgroundTint="#2E7D32"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

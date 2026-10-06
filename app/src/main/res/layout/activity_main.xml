@@ -1,54 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="32dp"
+    android:padding="24dp"
     android:gravity="center"
-    android:background="#F5F5F5">
+    android:background="#ECEFF1"> <!-- Un gris azulado muy elegante -->
+
+    <!-- Título Principal -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SBAO Hub"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#263238"
+        android:layout_marginBottom="8dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a SBAO"
-        android:textSize="28sp"
-        android:textStyle="bold"
+        android:text="Portal de Proyectos"
+        android:textSize="16sp"
         android:gravity="center"
-        android:layout_marginBottom="32dp"
-        android:textColor="#333333"/>
+        android:textColor="#546E7A"
+        android:layout_marginBottom="32dp"/>
 
-    <!-- Campo de texto para la validación que pide la rúbrica -->
-    <EditText
-        android:id="@+id/etNombre"
+    <!-- TARJETA FLOTANTE (Aquí está la magia del diseño) -->
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ingresa tu nombre para continuar"
-        android:inputType="textPersonName"
-        android:padding="16dp"
-        android:background="@android:color/white"
-        android:layout_marginBottom="24dp"/>
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="24dp">
 
-    <Button
-        android:id="@+id/btnIngresar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingresar"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        <!-- Contenido dentro de la tarjeta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="#FFFFFF">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Identificación"
+                android:textStyle="bold"
+                android:textColor="#263238"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribe tu nombre aquí..."
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:background="#F5F5F5"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnVerProyecto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚀 Entrar al Dashboard"
+                android:padding="12dp"
+                android:backgroundTint="#0277BD"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botones secundarios estilo "Texto sin fondo relleno" -->
     <Button
         android:id="@+id/btnConfig"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ajustes de App"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        android:text="⚙️ Ajustes del Sistema"
+        android:layout_marginBottom="8dp"/>
 
     <Button
         android:id="@+id/btnAyuda"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ayuda / FAQ"
-        android:padding="12dp" />
+        android:text="❓ Centro de Ayuda" />
 
 </LinearLayout>

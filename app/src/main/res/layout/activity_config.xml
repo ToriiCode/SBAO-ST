@@ -1,35 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="32dp"
-    android:gravity="center"
-    android:background="#E0F7FA"> <!-- Un color de fondo celestito para variar -->
+    android:padding="24dp"
+    android:gravity="top"
+    android:background="#ECEFF1">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="⚙️ Ajustes del Sistema"
-        android:textSize="24sp"
+        android:text="Ajustes de Red"
+        android:textSize="28sp"
         android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="32dp"
-        android:textColor="#006064"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Para que nuestra web en Vercel cargue correctamente, asegúrate de tener una buena conexión a internet."
-        android:textSize="16sp"
-        android:textAlignment="center"
+        android:textColor="#263238"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="24dp"/>
 
-    <Button
-        android:id="@+id/btnWifi"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="📶 Configurar Red Wi-Fi"
-        android:padding="12dp" />
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📶 Diagnóstico de Conexión"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para que los proyectos de Vercel carguen correctamente y las redes sociales se sincronicen, asegúrate de estar conectado a una red estable."
+                android:textSize="14sp"
+                android:textColor="#546E7A"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnWifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abrir Ajustes de Wi-Fi"
+                android:backgroundTint="#FF8F00"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
