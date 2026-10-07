@@ -3,8 +3,8 @@
 Esta es una aplicación nativa para Android desarrollada como **Prototipo 2**. Su objetivo principal es servir como un "Hub" central que conecta a los usuarios con nuestro proyecto web alojado en **Vercel** y nuestras redes sociales (**Instagram**), facilitando además vías de contacto directo (llamadas, emails y ubicación).
 
 🛠️ **Información Técnica:**
-* **Versión de Android API Mínima:** API 24 (Android 7.0)
-* **Versión de Android Gradle Plugin (AGP):** [Escribe aquí tu versión, ej: 8.2.0]
+* **Versión de Android API Mínima:** API 31 (Android 7.0)
+* **Versión de Android Gradle Plugin (AGP):** 9.0.1
 * **Lenguaje:** Java
 
 ---
@@ -50,12 +50,14 @@ Conectan la app con aplicaciones y sistemas externos:
 
 ## 📸 Capturas de Pantalla
 
-*(Nota para el equipo: Reemplazar estos enlaces por las capturas reales cuando terminen el diseño)*
-
-1. ![Inicio de la App](enlace-a-imagen-1) - *Pantalla Principal con validación*
-2. ![Detalle y Enlaces](enlace-a-imagen-2) - *Pantalla de Detalles*
-3. ![Ajustes](enlace-a-imagen-3) - *Pantalla de Configuración*
-4. ![Redirección Web](enlace-a-imagen-4) - *App abriendo web en Vercel*
+1. ![Inicio de la App](<img width="613" height="1298" alt="image" src="https://github.com/user-attachments/assets/7cbfa80f-dc53-4bdd-a427-5d5cb7ca1d1f" />
+) - *Pantalla Principal con validación*
+2. ![Detalle y Enlaces](<img width="607" height="1297" alt="image" src="https://github.com/user-attachments/assets/59832e83-6c7a-43dc-bb7c-1eef52a9bf73" />
+) - *Pantalla de Detalles*
+3. ![Ajustes](<img width="606" height="1293" alt="image" src="https://github.com/user-attachments/assets/f99c97b7-6aab-40f3-9fdb-9942435f8ec7" />
+) - *Pantalla de Configuración*
+4. ![Ayuda](<img width="616" height="1302" alt="image" src="https://github.com/user-attachments/assets/19842e90-8ba7-47f4-8be9-2297f69ee235" />
+) - *Pantalla de Ayuda*
 
 ---
 
